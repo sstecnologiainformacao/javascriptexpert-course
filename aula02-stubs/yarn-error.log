@@ -1,0 +1,47 @@
+Arguments: 
+  /home/santos/.nvm/versions/node/v16.16.0/bin/node /usr/share/yarn/bin/yarn.js -D add sinom@9
+
+PATH: 
+  /home/santos/.nvm/versions/node/v16.16.0/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/santos/bin:/mnt/02417bc5-bf92-479e-83e5-6593dc5870d6/gcloud/google-cloud-sdk/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/santos/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/media/santos/arquivos/Android/Sdk/tools:/usr/lib/jvm/java-8-openjdk-amd64/bin:/media/santos/arquivos/Android/Sdk/tools:/usr/lib/jvm/java-8-openjdk-amd64/bin
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  16.16.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/sinom: Not found
+      at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:67031:18)
+      at Request.self.callback (/usr/share/yarn/lib/cli.js:140885:22)
+      at Request.emit (node:events:527:28)
+      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:141857:10)
+      at Request.emit (node:events:527:28)
+      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:141779:12)
+      at Object.onceWrapper (node:events:641:28)
+      at IncomingMessage.emit (node:events:539:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "aula02-stubs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
