@@ -1,0 +1,17 @@
+[
+    {
+        "id": "c162a466-a4c6-48c9-9bf2-588191c8c1c6",
+        "name": "CTS",
+        "age": 17
+    },
+    {
+        "id": "dc6d47cb-3436-4e04-89da-d956aed19707",
+        "name": "Silverado",
+        "age": 9
+    },
+    {
+        "id": "642805fe-696b-42b8-aaa6-7b37af944272",
+        "name": "Roadster",
+        "age": 16
+    }
+]

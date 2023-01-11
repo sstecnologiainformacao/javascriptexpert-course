@@ -1,0 +1,23 @@
+[
+    {
+        "id": "28523e38-8c41-4d8f-b00e-7ee25bfc2797",
+        "name": "Expedition",
+        "releaseYear": 2022,
+        "available": true,
+        "gasAvailable": true
+    },
+    {
+        "id": "d0cba7c9-cc4b-4b44-a4b0-6728fd32cf85",
+        "name": "Explorer",
+        "releaseYear": 2022,
+        "available": true,
+        "gasAvailable": true
+    },
+    {
+        "id": "e41da89b-90c2-4050-81b1-9c2a23973933",
+        "name": "Escalade",
+        "releaseYear": 2022,
+        "available": true,
+        "gasAvailable": true
+    }
+]
