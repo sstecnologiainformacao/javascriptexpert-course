@@ -1,8 +1,12 @@
 import { writeFile, readFile} from 'fs/promises';
 
-export const save = async (data) => {
-    const { pathname: databaseFile } = new URL('./../database.json', import.meta.url);
-    const currentData = JSON.parse(await readFile(databaseFile));
-    currentData.push(data);
-    await writeFile(databaseFile, JSON.stringify(currentData));
-}
+export default class Repository {
+    constructor() {}
+
+    async save(data, url = './../database.json', path = import.meta.url) {
+        const { pathname: databaseFile } = new URL(url, path);
+        const currentData = JSON.parse(await readFile(databaseFile));
+        currentData.push(data);
+        await writeFile(databaseFile, JSON.stringify(currentData));
+    }
+};
