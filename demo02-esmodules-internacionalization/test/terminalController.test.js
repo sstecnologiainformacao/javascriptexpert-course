@@ -6,17 +6,7 @@ import sinon from 'sinon';
 
 import TerminalController from '../src/terminalController';
 
-let sandbox = null;
-
 describe('TerminalController', () => {
-
-    beforeEach(() => {
-        sandbox = sinon.createSandbox();
-    });
-
-    afterEach(() => {
-        sandbox.restore();
-    })
 
     it('Should initializete the table', async () => {
         const terminal = new TerminalController({

@@ -1,9 +1,21 @@
 import mocha from 'mocha';
 const { describe, it, afterEach } = mocha;
+import sinon from 'sinon';
+import importMetaUrl from '../src/importMetaUrl.js';
+
+let sandbox = null;
 
 import Repository from './../src/repository.js';
 
 describe('Repository', () => {
+
+    beforeEach(() => {
+        sandbox = sinon.createSandbox();
+    });
+
+    afterEach(() => {
+        sandbox.restore();
+    })
 
     it('Should save the data', async () => {
         const data = {
@@ -14,6 +26,10 @@ describe('Repository', () => {
             id: '1'
         };
 
-        await new Repository().save(data, './database.test.json', '');
+        const respository = new Repository({
+            getUrl: () => ''
+        });
+
+        await respository.save(data, './database.test.json');
     })
 });
